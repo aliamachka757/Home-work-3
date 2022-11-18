@@ -1,62 +1,80 @@
 public class Main {
     public static void main(String[] args) {
 
-    //Problem 1//
-        System.out.println("Problem 1");
-        byte myDog = 70;
-        System.out.println(" My dog weights "+ myDog + " Lb ");
-        short myWeight = 210;
-        System.out.println(" My weight is " +210+ " lb ");
-        int husbandWeight = 310;
-        System.out.println(" My Husband Weight is " + 310 + " Lb ");
-        long CombineWeight = 70L+210L+310L;
-        System.out.println(" Our combine weight is "+CombineWeight+ " Lb ");
-        float sonSleep = 8.5f;
-        System.out.println(" My youngest son sleeps " +sonSleep+" hours a night " );
-        double son2Sleeps = 9.5;
-        System.out.println(" My older son sleeps " +son2Sleeps + " hours a night ");
-
-        // Problem 2 //
-        System.out.println("problem 2");
-        long x = 987678965549L;
-        float b = 27.12f;
-        double c = 2.786;
-        byte v = 67;
-        short y = -159;
-        int g = 27897;
-        char h =  569;
-        boolean k = 20 > 35;
-        System.out.println("x = "+ x + "");
-        System.out.println("b = " + b +"");
-        System.out.println("c = " + c +"");
-        System.out.println("v = " + v + "" );
-        System.out.println("g = " + g + "" );
-        System.out.println("h = " + h + "");
-        System.out.println("k = " + k + "");
-
-        // Problem 3 //
-        System.out.println("Problem 3 ");
-        int class1students = 23;
-        int class2students = 27;
-        int  class3students = 30;
-        int amountOfStudents = 23 + 27 + 30;
-        int paper = 480;
-        System.out.println(" На каждого ученика рассчитано " + paper / amountOfStudents  + " листов бумаги ");
+    //Problem 5//
+        System.out.println("Problem 5");
+        var cansOfPaint = 120;
+        var whitePaint = 2;
+        var browPaint = 4;
+        var paintForClass = whitePaint + browPaint;
+        System.out.println(paintForClass);
+        System.out.println("В школе, где " + cansOfPaint/paintForClass + " классов, нужно "+ cansOfPaint/paintForClass * browPaint + " банок белой краски и " + cansOfPaint/paintForClass * 2 +" банок коричневой краски");
 
 
-        //Problem 4 //
-        System.out.println(" Problem 4 ");
-        short bottlePerMinute = 16 / 2;
-        short bottlePerHour = 8 * 60;
-        short minutes = 20;
-        short day = 24;
-        short threeDays = 24 * 3;
-        int oneMoths = 24 * 30;
+        // problem 6 //
+        System.out.println( " Problem 6 " );
+        short banana = 5;
+        short weightBanana = 80;
+        short milk = 200;
+        short weightMilk = 100;
+        short iceCream = 2;
+        short iceCreamWeight = 100;
+        short eggs = 4;
+        short eggsWeight = 70;
+        int breakfastForSportsmen = banana * weightBanana +milk * weightMilk + iceCream * iceCreamWeight + eggs * eggsWeight ;
+        System.out.println("weight of breakfast for  this sportsmen  is "+breakfastForSportsmen+ " grams ");
+        int grPerKg = 1000;
+        float weightKg = 20880 /grPerKg ;
+        System.out.println("weight of breakfast in kg is for this sportsmen  " + weightKg+" kg ");
 
-        System.out.println(" За 20 minutes машины произвела " + bottlePerMinute * 20 +  " бутылок ");
-        System.out.println(" За сутки машиныа произвела " + bottlePerHour * day + " бутылок " );
-        System.out.println(" За 3 дня  машиныа произвела " + threeDays * 11520 + " бутылок " );
-        System.out.println(" За 1 месяц машиныа произвела " + oneMoths * 11520 + " бутылок ");
+
+        // problem 7 //
+        System.out.println(" Problem 7 ");
+
+        int gramPerKg = 1000;
+        int weightGoalInGr = 7 * gramPerKg;
+        int weightLossInDay1 = 250;
+        int weightLossInda12 = 500;
+        double desireWeightLoss1 = weightGoalInGr/weightLossInDay1;
+        double desireWeightLoss2 = weightGoalInGr/weightLossInda12;
+        System.out.println("if every day athlete will be loosing 250 gr. he will lose desire  weight in "+desireWeightLoss1 + " days  ");
+        System.out.println("If every day athlete will be loosing 500 gr he will lose desire  weight in "+desireWeightLoss2 +" days ");
+
+
+
+
+        //Problem 8 //
+
+        System.out.println("Problem 8");
+        long mashaMonthlyPay = 67760;
+        long denisMonthlyPay = 83690;
+        long kristinaMonthlyPay = 76230;
+        char  payIncrease = 10;
+       long mashaPayIncrease = mashaMonthlyPay/payIncrease;
+        long denisPayIncrease = denisMonthlyPay/payIncrease;
+        long kristinaPayIncrease = kristinaMonthlyPay/payIncrease;
+       long  mashaNewPay = mashaPayIncrease + mashaMonthlyPay;
+        long denisNewPay = denisPayIncrease + denisMonthlyPay;
+        long kristinaNewPAy = kristinaMonthlyPay + kristinaPayIncrease;
+        long mashaPayDifference = mashaNewPay - mashaMonthlyPay;
+        long denisPayDifference = denisNewPay -denisMonthlyPay;
+        long kristinaPayDifference = kristinaNewPAy- kristinaMonthlyPay;
+        System.out.println("Маша теперь получает " + mashaNewPay + " рублей. Годовой доход вырос на " + mashaPayDifference  + " рублей");
+        System.out.println("Деннисс  теперь получает " + denisNewPay + " рублей. Годовой доход вырос на " + denisPayDifference + " рублей" );
+        System.out.println("Крестина   теперь получает " + kristinaNewPAy + "рублей. Годовой доход вырос на" + kristinaPayDifference +  " рублей");
+
+
+
+        
+
+
+
+
+
+
+
+
+
 
 
 
